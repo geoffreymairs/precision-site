@@ -21,7 +21,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-stone-400 text-lg max-w-2xl">
             Call Billy directly for a free quote, or leave a message below and
-            we'll get back to you quickly.
+            we'll get back to you within one working day.
           </p>
         </div>
       </div>
