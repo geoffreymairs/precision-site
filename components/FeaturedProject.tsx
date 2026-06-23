@@ -159,7 +159,7 @@ export default function FeaturedProject() {
               Featured Project
             </p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 text-balance">
-              Premium Concrete Driveway Transformation
+              New Driveway Installation
             </h2>
 
             <div className="flex items-center gap-2 text-stone-400 mb-6">
@@ -167,7 +167,7 @@ export default function FeaturedProject() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
               </svg>
-              <span className="text-lg">Auckland, New Zealand</span>
+              <span className="text-lg">Hawkes Bay, New Zealand</span>
             </div>
 
             <p className="text-stone-400 leading-relaxed mb-6">
