@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback, useMemo } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Easy to re-assign: just move an image between the "before" and "after" arrays.
 const beforeImages = [
@@ -185,6 +186,17 @@ export default function FeaturedProject() {
                 </span>
               ))}
             </div>
+
+            {/* Call to action */}
+            <Link
+              href="/contact"
+              className="mt-8 inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-4 rounded-lg text-lg transition-colors"
+            >
+              Get a Free Quote
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
           </div>
         </div>
 
