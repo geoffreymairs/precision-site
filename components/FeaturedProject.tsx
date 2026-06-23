@@ -171,9 +171,12 @@ export default function FeaturedProject() {
             </div>
 
             <p className="text-stone-400 leading-relaxed mb-6">
-              A full residential transformation — from raw excavation and site preparation
-              through to a smooth, hard-wearing concrete driveway. Toggle between the
-              before and after views to see the difference.
+              Precision Digger Worx was engaged to complete a full driveway construction
+              project for this Hawke&apos;s Bay property. Starting with raw earthworks and site
+              preparation, our team carried out excavation, shaping, basecourse installation,
+              drainage considerations, and final concrete works to create a durable,
+              low-maintenance driveway designed for long-term performance and improved
+              property presentation.
             </p>
 
             <div className="flex flex-wrap gap-2">
