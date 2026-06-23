@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import FeaturedProject from "@/components/FeaturedProject";
 
 const images = [
   { src: "/images/driveway1.jpeg", alt: "Freshly graded curving gravel driveway through tilled earth with rolling green hills behind" },
@@ -87,8 +88,11 @@ export default function GalleryPage() {
         </div>
       </div>
 
+      {/* Featured Project */}
+      <FeaturedProject />
+
       {/* Grid */}
-      <section className="bg-stone-950 py-14 px-4 sm:px-6 lg:px-8">
+      <section className="bg-stone-950 pt-14 pb-14 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {images.map((img, i) => (
