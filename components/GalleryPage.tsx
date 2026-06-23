@@ -5,6 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const images = [
+  { src: "/images/driveway1.jpeg", alt: "Freshly graded curving gravel driveway through tilled earth with rolling green hills behind" },
+  { src: "/images/driveway8.jpeg", alt: "Wide curving gravel driveway leading toward farm buildings with excavator and truck" },
+  { src: "/images/driveway4.jpeg", alt: "Concrete pad meeting a graded gravel driveway curving through a green farm paddock" },
+  { src: "/images/driveway6.jpeg", alt: "Elevated view of concrete pad and curved gravel driveway looping around fresh topsoil" },
+  { src: "/images/driveway5.jpeg", alt: "Freshly poured concrete slab with excavator and sand piles on rural property" },
+  { src: "/images/driveway7.jpeg", alt: "View through a black farm gate to a curved gravel driveway with parked truck and excavator" },
+  { src: "/images/driveway3.jpeg", alt: "Concrete slab edge overlooking a large excavated earthworks site with tyre tracks" },
+  { src: "/images/driveway2.jpeg", alt: "Graded dirt access ramp leading up to a concrete culvert and farm gate" },
   { src: "/images/1-pdw.jpeg", alt: "Long service trench dug along driveway with excavator bucket visible" },
   { src: "/images/2-pdw.jpeg", alt: "Yanmar excavator with Precision Digger Worx branding at levelled foundation site" },
   { src: "/images/3-pdw.jpeg", alt: "Levelled and prepared foundation pad ready for concrete" },
