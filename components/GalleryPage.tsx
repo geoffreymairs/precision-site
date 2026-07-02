@@ -3,7 +3,27 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import FeaturedProject from "@/components/FeaturedProject";
+import FeaturedProject, { type FeaturedProjectData } from "@/components/FeaturedProject";
+
+const instantLawnProject: FeaturedProjectData = {
+  title: "Instant Lawn Installation",
+  location: "Hawkes Bay, New Zealand",
+  description:
+    "Precision Digger Worx was engaged to transform a tired front garden for this Hawke's Bay property. Our team removed the existing overgrown garden and beds, prepared and levelled the ground, then laid fresh ready lawn around the established paver pathways. The result is a clean, low-maintenance green space that instantly lifts the home's street appeal.",
+  tags: ["Instant Lawn", "Garden Removal", "Site Preparation", "Landscaping", "Residential"],
+  beforeImages: [
+    { src: "/images/lawn-before1.jpeg", alt: "Excavator clearing the old garden with bare soil beds around brick paver paths before turf was laid" },
+    { src: "/images/lawn-before2.jpeg", alt: "Prepared and levelled ground with the first rolls of ready lawn being laid beside the paver path" },
+    { src: "/images/lawn-before3.jpeg", alt: "Front garden mid-installation with turf partially laid and watering in progress" },
+  ],
+  afterImages: [
+    { src: "/images/lawn-after1.jpeg", alt: "Completed lush green instant lawn around the circular paver feature in front of the house" },
+    { src: "/images/lawn-after2.jpeg", alt: "Freshly laid lawn around a palm tree and curved paver path with rural views behind" },
+    { src: "/images/lawn-after3.jpeg", alt: "New green lawn framing the brick paver pathway and circular feature" },
+    { src: "/images/lawn-after4.jpeg", alt: "Established instant lawn beside the paver path with hedges and driveway" },
+    { src: "/images/lawn-after5.jpeg", alt: "Finished green lawn beside the brick path with distant mountain views" },
+  ],
+};
 
 const images = [
   { src: "/images/driveway1.jpeg", alt: "Freshly graded curving gravel driveway through tilled earth with rolling green hills behind" },
@@ -88,8 +108,9 @@ export default function GalleryPage() {
         </div>
       </div>
 
-      {/* Featured Project */}
+      {/* Featured Projects */}
       <FeaturedProject />
+      <FeaturedProject project={instantLawnProject} />
 
       {/* Grid */}
       <section className="bg-stone-950 pt-14 pb-14 px-4 sm:px-6 lg:px-8">
