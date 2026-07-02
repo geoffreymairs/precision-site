@@ -26,6 +26,14 @@ const instantLawnProject: FeaturedProjectData = {
 };
 
 const images = [
+  { src: "/images/lawn-after1.jpeg", alt: "Completed lush green instant lawn around the circular paver feature in front of the house" },
+  { src: "/images/lawn-after2.jpeg", alt: "Freshly laid lawn around a palm tree and curved paver path with rural views behind" },
+  { src: "/images/lawn-after3.jpeg", alt: "New green lawn framing the brick paver pathway and circular feature" },
+  { src: "/images/lawn-after4.jpeg", alt: "Established instant lawn beside the paver path with hedges and driveway" },
+  { src: "/images/lawn-after5.jpeg", alt: "Finished green lawn beside the brick path with distant mountain views" },
+  { src: "/images/lawn-before1.jpeg", alt: "Excavator clearing the old garden with bare soil beds around brick paver paths before turf was laid" },
+  { src: "/images/lawn-before2.jpeg", alt: "Prepared and levelled ground with the first rolls of ready lawn being laid beside the paver path" },
+  { src: "/images/lawn-before3.jpeg", alt: "Front garden mid-installation with turf partially laid and watering in progress" },
   { src: "/images/driveway1.jpeg", alt: "Freshly graded curving gravel driveway through tilled earth with rolling green hills behind" },
   { src: "/images/driveway8.jpeg", alt: "Wide curving gravel driveway leading toward farm buildings with excavator and truck" },
   { src: "/images/driveway4.jpeg", alt: "Concrete pad meeting a graded gravel driveway curving through a green farm paddock" },
