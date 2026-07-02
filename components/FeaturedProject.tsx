@@ -4,26 +4,48 @@ import { useState, useRef, useCallback, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// Easy to re-assign: just move an image between the "before" and "after" arrays.
-const beforeImages = [
-  { src: "/images/driveway2.jpeg", alt: "Rough graded dirt access ramp leading up to a concrete culvert and farm gate before works" },
-  { src: "/images/driveway3.jpeg", alt: "Large excavated earthworks site with tyre tracks during site preparation" },
-  { src: "/images/driveway5.jpeg", alt: "Freshly poured concrete slab with excavator and sand piles mid-project" },
-];
+type GalleryImage = { src: string; alt: string };
 
-const afterImages = [
-  { src: "/images/driveway1.jpeg", alt: "Freshly graded curving gravel driveway through tilled earth with rolling green hills behind" },
-  { src: "/images/driveway8.jpeg", alt: "Wide curving gravel driveway leading toward farm buildings" },
-  { src: "/images/driveway4.jpeg", alt: "Completed concrete pad meeting a graded gravel driveway curving through a green paddock" },
-  { src: "/images/driveway6.jpeg", alt: "Elevated view of finished concrete pad and curved gravel driveway looping around fresh topsoil" },
-  { src: "/images/driveway7.jpeg", alt: "View through a black farm gate to the completed curved gravel driveway" },
-];
+export type FeaturedProjectData = {
+  eyebrow?: string;
+  title: string;
+  location: string;
+  description: string;
+  tags: string[];
+  beforeImages: GalleryImage[];
+  afterImages: GalleryImage[];
+};
 
-const tags = ["Concrete Driveway", "Excavation", "Site Preparation", "Drainage", "Residential"];
+// Default project — Concrete Driveway installation.
+const drivewayProject: FeaturedProjectData = {
+  eyebrow: "Featured Project",
+  title: "New Driveway Installation",
+  location: "Hawkes Bay, New Zealand",
+  description:
+    "Precision Digger Worx was engaged to complete a full driveway construction project for this Hawke's Bay property. Starting with raw earthworks and site preparation, our team carried out excavation, shaping, basecourse installation, drainage considerations, and final concrete works to create a durable, low-maintenance driveway designed for long-term performance and improved property presentation.",
+  tags: ["Concrete Driveway", "Excavation", "Site Preparation", "Drainage", "Residential"],
+  beforeImages: [
+    { src: "/images/driveway2.jpeg", alt: "Rough graded dirt access ramp leading up to a concrete culvert and farm gate before works" },
+    { src: "/images/driveway3.jpeg", alt: "Large excavated earthworks site with tyre tracks during site preparation" },
+    { src: "/images/driveway5.jpeg", alt: "Freshly poured concrete slab with excavator and sand piles mid-project" },
+  ],
+  afterImages: [
+    { src: "/images/driveway1.jpeg", alt: "Freshly graded curving gravel driveway through tilled earth with rolling green hills behind" },
+    { src: "/images/driveway8.jpeg", alt: "Wide curving gravel driveway leading toward farm buildings" },
+    { src: "/images/driveway4.jpeg", alt: "Completed concrete pad meeting a graded gravel driveway curving through a green paddock" },
+    { src: "/images/driveway6.jpeg", alt: "Elevated view of finished concrete pad and curved gravel driveway looping around fresh topsoil" },
+    { src: "/images/driveway7.jpeg", alt: "View through a black farm gate to the completed curved gravel driveway" },
+  ],
+};
 
 type Phase = "before" | "after";
 
-export default function FeaturedProject() {
+export default function FeaturedProject({
+  project = drivewayProject,
+}: {
+  project?: FeaturedProjectData;
+}) {
+  const { eyebrow = "Featured Project", title, location, description, tags, beforeImages, afterImages } = project;
   const [phase, setPhase] = useState<Phase>("after");
   const [index, setIndex] = useState(0);
   const touchStartX = useRef<number | null>(null);
@@ -156,10 +178,10 @@ export default function FeaturedProject() {
           {/* Details — 40% on desktop */}
           <div className="lg:col-span-2 lg:pt-2">
             <p className="text-amber-400 text-sm font-semibold uppercase tracking-widest mb-3">
-              Featured Project
+              {eyebrow}
             </p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 text-balance">
-              New Driveway Installation
+              {title}
             </h2>
 
             <div className="flex items-center gap-2 text-stone-400 mb-6">
@@ -167,16 +189,11 @@ export default function FeaturedProject() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
               </svg>
-              <span className="text-lg">Hawkes Bay, New Zealand</span>
+              <span className="text-lg">{location}</span>
             </div>
 
             <p className="text-stone-400 leading-relaxed mb-6">
-              Precision Digger Worx was engaged to complete a full driveway construction
-              project for this Hawke&apos;s Bay property. Starting with raw earthworks and site
-              preparation, our team carried out excavation, shaping, basecourse installation,
-              drainage considerations, and final concrete works to create a durable,
-              low-maintenance driveway designed for long-term performance and improved
-              property presentation.
+              {description}
             </p>
 
             <div className="flex flex-wrap gap-2">
