@@ -46,13 +46,14 @@ export default function FeaturedProject({
   project?: FeaturedProjectData;
 }) {
   const { eyebrow = "Featured Project", title, location, description, tags, beforeImages, afterImages } = project;
+  const hasBefore = beforeImages.length > 0;
   const [phase, setPhase] = useState<Phase>("after");
   const [index, setIndex] = useState(0);
   const touchStartX = useRef<number | null>(null);
 
   const activeImages = useMemo(
     () => (phase === "before" ? beforeImages : afterImages),
-    [phase],
+    [phase, beforeImages, afterImages],
   );
 
   const switchPhase = useCallback((next: Phase) => {
@@ -89,22 +90,24 @@ export default function FeaturedProject({
           {/* Gallery — 60% on desktop */}
           <div className="lg:col-span-3">
             {/* Before / After toggle */}
-            <div className="inline-flex p-1 rounded-full bg-stone-800 mb-4">
-              {(["before", "after"] as Phase[]).map((p) => (
-                <button
-                  key={p}
-                  onClick={() => switchPhase(p)}
-                  className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-colors ${
-                    phase === p
-                      ? "bg-amber-500 text-white"
-                      : "text-stone-300 hover:text-white"
-                  }`}
-                  aria-pressed={phase === p}
-                >
-                  {p}
-                </button>
-              ))}
-            </div>
+            {hasBefore && (
+              <div className="inline-flex p-1 rounded-full bg-stone-800 mb-4">
+                {(["before", "after"] as Phase[]).map((p) => (
+                  <button
+                    key={p}
+                    onClick={() => switchPhase(p)}
+                    className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-colors ${
+                      phase === p
+                        ? "bg-amber-500 text-white"
+                        : "text-stone-300 hover:text-white"
+                    }`}
+                    aria-pressed={phase === p}
+                  >
+                    {p}
+                  </button>
+                ))}
+              </div>
+            )}
 
             {/* Primary image */}
             <div
@@ -122,9 +125,11 @@ export default function FeaturedProject({
                 priority
               />
 
-              <span className="absolute top-4 left-4 bg-stone-900/80 text-amber-400 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">
-                {phase}
-              </span>
+              {hasBefore && (
+                <span className="absolute top-4 left-4 bg-stone-900/80 text-amber-400 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">
+                  {phase}
+                </span>
+              )}
 
               <button
                 onClick={prev}
