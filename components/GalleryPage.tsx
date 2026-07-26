@@ -25,7 +25,28 @@ const instantLawnProject: FeaturedProjectData = {
   ],
 };
 
+const newLawnProject: FeaturedProjectData = {
+  title: "New Lawn Installation",
+  location: "Hawkes Bay, New Zealand",
+  description:
+    "We transformed this sloping front section by building a timber retaining wall, importing quality topsoil, and precision levelling the area ready for a new lawn. A tidy finish that will establish into a beautiful, low-maintenance outdoor space.",
+  tags: ["New Lawn", "Retaining Wall", "Topsoil", "Levelling", "Residential"],
+  beforeImages: [],
+  afterImages: [
+    { src: "/images/newlawn1.jpeg", alt: "Levelled topsoil section bordered by a new timber retaining wall with a Yanmar excavator on site" },
+    { src: "/images/newlawn6.jpeg", alt: "Freshly levelled topsoil bed framed by timber retaining wall beside a modern home" },
+    { src: "/images/newlawn2.jpeg", alt: "Prepared front section with levelled topsoil, timber retaining wall and excavator by the street" },
+    { src: "/images/newlawn4.jpeg", alt: "Levelled topsoil area enclosed by a new timber retaining wall ready for lawn" },
+    { src: "/images/newlawn5.jpeg", alt: "Flat, precision-levelled topsoil section near the street ready for turf" },
+  ],
+};
+
 const images = [
+  { src: "/images/newlawn1.jpeg", alt: "Levelled topsoil section bordered by a new timber retaining wall with a Yanmar excavator on site" },
+  { src: "/images/newlawn6.jpeg", alt: "Freshly levelled topsoil bed framed by timber retaining wall beside a modern home" },
+  { src: "/images/newlawn2.jpeg", alt: "Prepared front section with levelled topsoil, timber retaining wall and excavator by the street" },
+  { src: "/images/newlawn4.jpeg", alt: "Levelled topsoil area enclosed by a new timber retaining wall ready for lawn" },
+  { src: "/images/newlawn5.jpeg", alt: "Flat, precision-levelled topsoil section near the street ready for turf" },
   { src: "/images/lawn-after1.jpeg", alt: "Completed lush green instant lawn around the circular paver feature in front of the house" },
   { src: "/images/lawn-after2.jpeg", alt: "Freshly laid lawn around a palm tree and curved paver path with rural views behind" },
   { src: "/images/lawn-after3.jpeg", alt: "New green lawn framing the brick paver pathway and circular feature" },
@@ -119,6 +140,7 @@ export default function GalleryPage() {
       {/* Featured Projects */}
       <FeaturedProject />
       <FeaturedProject project={instantLawnProject} />
+      <FeaturedProject project={newLawnProject} />
 
       {/* Grid */}
       <section className="bg-stone-950 pt-14 pb-14 px-4 sm:px-6 lg:px-8">
