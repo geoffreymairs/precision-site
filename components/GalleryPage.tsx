@@ -5,6 +5,25 @@ import Image from "next/image";
 import Link from "next/link";
 import FeaturedProject, { type FeaturedProjectData } from "@/components/FeaturedProject";
 
+const excavationProject: FeaturedProjectData = {
+  title: "Excavation & Siteworks",
+  location: "Napier Hill, Hawke's Bay",
+  description:
+    "Precision Digger Worx carried out large-scale excavation and siteworks for this Napier Hill villa. With the house supported on temporary timber piles, our team excavated the site, shaped the ground, set out footings and thickenings with string lines, and managed spoil removal — all while working carefully around the existing structure and neighbouring boundaries.",
+  tags: ["Excavation", "Siteworks", "Demolition", "Footings", "Residential"],
+  beforeImages: [],
+  afterImages: [
+    { src: "/images/excavation1.jpeg", alt: "CAT and Yanmar excavators carrying out large-scale excavation in front of a white villa on Napier Hill" },
+    { src: "/images/excavation3.jpeg", alt: "Wide view of the villa on temporary timber piles beside a deep excavated site with survey equipment" },
+    { src: "/images/excavation7.jpeg", alt: "Excavated pit with a Yanmar excavator working below and a CAT excavator above" },
+    { src: "/images/excavation2.jpeg", alt: "CAT 311F excavator carrying out demolition and loading debris into a tip truck beside the house" },
+    { src: "/images/excavation5.jpeg", alt: "Two excavators shaping the excavation with the villa supported on timber piles behind" },
+    { src: "/images/excavation4.jpeg", alt: "Excavators forming footings with string lines set out across the prepared site" },
+    { src: "/images/excavation6.jpeg", alt: "Excavation in progress with silt fencing installed and machines working near the house" },
+    { src: "/images/excavation8.jpeg", alt: "Close excavation alongside the villa foundations with a Yanmar excavator and hand tools" },
+  ],
+};
+
 const instantLawnProject: FeaturedProjectData = {
   title: "Instant Lawn Installation",
   location: "Hawkes Bay, New Zealand",
@@ -42,6 +61,14 @@ const newLawnProject: FeaturedProjectData = {
 };
 
 const images = [
+  { src: "/images/excavation1.jpeg", alt: "CAT and Yanmar excavators carrying out large-scale excavation in front of a white villa on Napier Hill" },
+  { src: "/images/excavation3.jpeg", alt: "Wide view of the villa on temporary timber piles beside a deep excavated site with survey equipment" },
+  { src: "/images/excavation7.jpeg", alt: "Excavated swimming pool pit with a Yanmar excavator working below and a CAT excavator above" },
+  { src: "/images/excavation2.jpeg", alt: "CAT 311F excavator carrying out demolition and loading debris into a tip truck beside the house" },
+  { src: "/images/excavation5.jpeg", alt: "Two excavators shaping the excavation with the villa supported on timber piles behind" },
+  { src: "/images/excavation4.jpeg", alt: "Excavators forming footings with string lines set out across the prepared site" },
+  { src: "/images/excavation6.jpeg", alt: "Excavation in progress with silt fencing installed and machines working near the house" },
+  { src: "/images/excavation8.jpeg", alt: "Close excavation alongside the villa foundations with a Yanmar excavator and hand tools" },
   { src: "/images/newlawn1.jpeg", alt: "Levelled topsoil section bordered by a new timber retaining wall with a Yanmar excavator on site" },
   { src: "/images/newlawn6.jpeg", alt: "Freshly levelled topsoil bed framed by timber retaining wall beside a modern home" },
   { src: "/images/newlawn2.jpeg", alt: "Prepared front section with levelled topsoil, timber retaining wall and excavator by the street" },
@@ -138,6 +165,7 @@ export default function GalleryPage() {
       </div>
 
       {/* Featured Projects */}
+      <FeaturedProject project={excavationProject} />
       <FeaturedProject />
       <FeaturedProject project={instantLawnProject} />
       <FeaturedProject project={newLawnProject} />
