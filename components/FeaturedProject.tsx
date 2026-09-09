@@ -156,7 +156,7 @@ export default function FeaturedProject({
             </div>
 
             {/* Thumbnail strip */}
-            <div className="mt-3 flex gap-3 overflow-x-auto pb-1">
+            <div className="mt-3 flex gap-3 overflow-x-auto pb-1 scrollbar-dark">
               {activeImages.map((img, i) => (
                 <button
                   key={img.src}

@@ -13,3 +13,27 @@ body {
   color: #1c1917;
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Dark, subtle scrollbar for the thumbnail strips so it blends into the black section */
+.scrollbar-dark {
+  scrollbar-width: thin;
+  scrollbar-color: #44403c #1c1917; /* stone-700 thumb on stone-900 track */
+}
+
+.scrollbar-dark::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: #1c1917; /* stone-900 */
+  border-radius: 9999px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background: #44403c; /* stone-700 */
+  border-radius: 9999px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: #57534e; /* stone-600 */
+}
