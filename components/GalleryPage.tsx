@@ -32,7 +32,6 @@ const foundationProject: FeaturedProjectData = {
   tags: ["Foundations", "Excavation", "Site Preparation", "Earthworks", "Residential"],
   beforeImages: [],
   afterImages: [
-    { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-K1V9hwKzqJicfHTYBs4kVQfO6vurOp.png", alt: "Excavator and tip truck beside a freshly excavated foundation site in Hawke's Bay" },
     { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-ui9VGX3zT2QHAvlE7IOhun2vBccO57.jpeg", alt: "Wide foundation excavation beside an orchard with an excavator and truck" },
     { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-AAk8kz1VhyEb4dA9QJ2SK3j1uVB0N8.jpeg", alt: "Level foundation excavation prepared across a grassy Hawke's Bay site" },
     { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-9WMBskHJjHAV3FsGZUS27OWOVt8IyO.jpeg", alt: "Excavator and truck staged beside a prepared concrete access area" },
@@ -182,8 +181,8 @@ export default function GalleryPage() {
       </div>
 
       {/* Featured Projects */}
-      <FeaturedProject project={excavationProject} />
       <FeaturedProject project={foundationProject} />
+      <FeaturedProject project={excavationProject} />
       <FeaturedProject />
       <FeaturedProject project={instantLawnProject} />
       <FeaturedProject project={newLawnProject} />
