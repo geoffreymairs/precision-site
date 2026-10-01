@@ -84,9 +84,9 @@ export default function FeaturedProject({
   const current = activeImages[index];
 
   return (
-    <section className="relative block w-full shrink-0 bg-stone-950 pt-14 px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-7xl mx-auto">
-        <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-14 items-start">
+    <section className="relative block w-full shrink-0 bg-stone-950 px-4 py-10 sm:px-6 lg:px-8">
+      <div className="w-full max-w-5xl mx-auto">
+        <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[1.25fr_0.9fr] gap-7 lg:gap-10 items-start">
 
           {/* Gallery — 60% on desktop */}
           <div className="min-w-0">
@@ -227,7 +227,7 @@ export default function FeaturedProject({
         </div>
 
         {/* Divider */}
-        <div className="mt-14 border-t border-stone-800" />
+        <div className="mt-10 border-t border-stone-800" />
       </div>
     </section>
   );
