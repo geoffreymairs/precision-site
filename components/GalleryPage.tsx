@@ -24,6 +24,23 @@ const excavationProject: FeaturedProjectData = {
   ],
 };
 
+const foundationProject: FeaturedProjectData = {
+  title: "Foundation Works",
+  location: "Hawke's Bay, New Zealand",
+  description:
+    "Precision Digger Worx prepared this Hawke's Bay site for a new foundation, from the initial cut and excavation through to final ground preparation. Working around established orchards and existing access, the team shaped the site, managed spoil, and left a clean, level base ready for the next stage of construction.",
+  tags: ["Foundations", "Excavation", "Site Preparation", "Earthworks", "Residential"],
+  beforeImages: [],
+  afterImages: [
+    { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-K1V9hwKzqJicfHTYBs4kVQfO6vurOp.png", alt: "Excavator and tip truck beside a freshly excavated foundation site in Hawke's Bay" },
+    { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-ui9VGX3zT2QHAvlE7IOhun2vBccO57.jpeg", alt: "Wide foundation excavation beside an orchard with an excavator and truck" },
+    { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-AAk8kz1VhyEb4dA9QJ2SK3j1uVB0N8.jpeg", alt: "Level foundation excavation prepared across a grassy Hawke's Bay site" },
+    { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-9WMBskHJjHAV3FsGZUS27OWOVt8IyO.jpeg", alt: "Excavator and truck staged beside a prepared concrete access area" },
+    { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-FmE4ScJVBzkMYJNPkce5uQl70oBPHa.jpeg", alt: "Foundation sub-base and aggregate spread across a freshly excavated site" },
+    { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-5sUbU6zRnnyVhIw4ReZYOns3Bkydo0.jpeg", alt: "Excavator working beside a foundation excavation with aggregate stockpiled nearby" },
+  ],
+};
+
 const instantLawnProject: FeaturedProjectData = {
   title: "Instant Lawn Installation",
   location: "Hawkes Bay, New Zealand",
@@ -166,6 +183,7 @@ export default function GalleryPage() {
 
       {/* Featured Projects */}
       <FeaturedProject project={excavationProject} />
+      <FeaturedProject project={foundationProject} />
       <FeaturedProject />
       <FeaturedProject project={instantLawnProject} />
       <FeaturedProject project={newLawnProject} />
