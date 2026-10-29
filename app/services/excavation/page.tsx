@@ -1,41 +1,41 @@
 import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+import { relatedServices } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Earthmoving & Excavation Hawke's Bay | Precision Digger Worx",
+  title: "Residential Excavation Napier & Hastings | Precision Digger Worx",
   description:
-    "Earthmoving, earthworks and excavation across Napier, Hastings and Hawke's Bay. Site cuts, cut and fill, levelling and spoil removal with an experienced local operator.",
+    "Residential excavation across Hawke's Bay. House sites, foundations, retaining wall digs and earthworks with operated hire. Free quotes, call 022 649 1618.",
+  alternates: { canonical: "/services/excavation" },
 };
-
-const related = [
-  { label: "Operated Digger Hire", href: "/services/digger-hire" },
-  { label: "Foundations", href: "/services/foundations" },
-  { label: "Service Trenching", href: "/services/trenching" },
-  { label: "Concrete Preparation", href: "/services/concrete-prep" },
-  { label: "Driveways", href: "/services/driveways" },
-];
 
 export default function ExcavationPage() {
   return (
     <ServicePage
-      jobType="Earthmoving & excavation"
-      title="Earthmoving & Excavation"
-      heading="Earthmoving & Excavation in Hawke's Bay"
-      subtitle="Earthmoving and earthworks for homes, lifestyle blocks and light commercial sites across Napier, Hastings and the wider Bay. Any size job, done right."
-      image="/images/IMG20240924151517-scaled.jpg"
-      imageAlt="CAT mini excavator on a large earthworks site with Hawke's Bay hills in the background"
-      description="From a small backyard cut to bulk earthworks on a rural block, Precision Digger Worx handles earthmoving and excavation jobs of all sizes. Billy brings the right machine and years of experience, so the earthworks are done efficiently with no wasted digging. We cart away spoil or redistribute it on site, sort out access and keep you updated the whole way. Not sure if we can help? Just give us a call and talk it through."
+      jobType="Residential excavation"
+      title="Residential Excavation"
+      heading="Residential Excavation Napier & Hastings"
+      subtitle="Excavation for house sites, foundations, retaining walls and residential earthworks across Napier, Hastings and the wider Bay."
+      image="/images/excavation1.jpeg"
+      imageAlt="CAT and Yanmar excavators carrying out residential excavation in front of a villa on Napier Hill"
+      description="Precision Digger Worx handles residential excavation for homeowners, builders and engineers across Hawke's Bay. From digging out a new house site and foundations to excavating for retaining walls and general residential earthworks, Billy brings the right machine and years of experience so the job is done accurately with no wasted digging. We cart away spoil or reuse it on site, work carefully around existing homes and services, and keep you updated the whole way."
       bullets={[
-        "Site excavation and earthworks for new builds",
-        "Bulk earthmoving, cut and fill",
-        "Pond and dam excavation",
+        "House site excavation for new builds",
+        "Foundation and footing excavation",
+        "Retaining wall digs",
+        "Residential earthworks, cut and fill",
         "Levelling and building platforms",
         "Spoil removal or on-site redistribution",
-        "Rural and lifestyle block earthworks",
         "Tight or tricky access sites",
-        "Residential and light commercial earthmoving",
+        "Working alongside builders and engineers",
       ]}
-      relatedServices={related}
+      relatedServices={relatedServices(
+        "/services/foundations",
+        "/services/land-section-prep",
+        "/services/pool-digouts",
+        "/services/trenching",
+        "/services/digger-hire",
+      )}
     />
   );
 }

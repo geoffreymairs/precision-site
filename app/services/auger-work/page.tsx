@@ -16,7 +16,7 @@ const related = [
 export default function AugerWorkPage() {
   return (
     <ServicePage
-      jobType="Auger / post hole drilling"
+      jobType="Auger work"
       title="Auger Work"
       subtitle="Precision hole drilling for fence posts, building piles, retaining walls, and structures - fast, accurate, and in the right place every time."
       image="/images/IMG20250304100030-scaled.jpg"

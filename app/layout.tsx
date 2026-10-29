@@ -15,9 +15,9 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Operated Digger Hire & Earthmoving Hawke's Bay | Precision Digger Worx",
+  title: "Excavation & Earthworks Napier & Hastings | Precision Digger Worx",
   description:
-    "Operated digger hire, earthmoving, excavation, trenching and driveways across Napier, Hastings and Hawke's Bay. Free quotes, call Billy on 022 649 1618.",
+    "Operated digger hire, driveway prep, residential excavation, section prep, pool digouts, demolition and trenching across Napier, Hastings and Hawke's Bay. Free quotes, call Billy on 022 649 1618.",
 };
 
 export default function RootLayout({

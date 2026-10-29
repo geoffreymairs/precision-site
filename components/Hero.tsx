@@ -3,11 +3,12 @@ import QuoteForm from "@/components/QuoteForm";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 const serviceList = [
-  "Operated digger hire",
-  "Earthmoving & excavation",
-  "Service trenching",
-  "Driveways & concrete prep",
-  "Foundations",
+  "Driveway prep",
+  "Residential excavation",
+  "Land & section prep",
+  "Pool digouts",
+  "Demolition & removal",
+  "Trenching & drainage",
 ];
 
 const heroTrust = [
@@ -38,9 +39,13 @@ export default function Hero() {
               Napier · Hastings · Hawke&apos;s Bay
             </p>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-white leading-tight mb-4 text-balance">
-              Operated Digger Hire &amp;{" "}
-              <span className="text-amber-400">Earthmoving</span>
+              Excavation &amp; Earthworks,{" "}
+              <span className="text-amber-400">Napier &amp; Hastings</span>
             </h1>
+
+            <p className="text-stone-200 text-base sm:text-lg mb-5 text-pretty">
+              Driveway prep, section prep, pool digouts, demolition and trenching. Billy operates every job.
+            </p>
 
             <ul className="flex flex-wrap gap-x-4 gap-y-2 mb-5" aria-label="Why customers choose us">
               {heroTrust.map((item) => (
@@ -68,10 +73,7 @@ export default function Hero() {
               Call Billy {PHONE_DISPLAY}
             </a>
 
-            <p className="hidden sm:block text-stone-300 text-base mt-6 mb-4">
-              Billy operates every job, done on time, on budget and fully cleaned up on completion.
-            </p>
-            <ul className="hidden sm:block space-y-2">
+            <ul className="hidden sm:block space-y-2 mt-6">
               {serviceList.map((service) => (
                 <li key={service} className="flex items-center gap-3 text-stone-200 text-[15px]">
                   <span className="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0">
