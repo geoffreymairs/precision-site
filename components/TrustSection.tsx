@@ -14,7 +14,7 @@ const reviews = [
   },
   {
     author: "Athir Matti",
-    text: "I have known Billy for well over 5 years now and he has done over 5 different jobs for me in different locations. So I can say with full confidence, he is one local legend.",
+    text: "I have known Billy for well over 5 years now and he has done over 5 different jobs for me in different locations. So I can say with full confidence, he is one local legend. Knowledgeable, professional with high integrity. Fair and honest pricing, he will not leave until the job is 100% done. Highly recommended and I will keep using him, well done Billy.",
   },
   {
     author: "Barking Mad Landscapes",
