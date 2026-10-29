@@ -1,8 +1,8 @@
 // Google Ads conversion targets.
 // Form conversion is the existing live action that was already firing on /thank-you.
-// Call-click conversion stays disabled until a phone-call conversion "AW-ID/label" is created in Google Ads.
+// Call conversion fires on every tel: link click via the global listener in components/CallTracking.tsx.
 export const FORM_CONVERSION_SEND_TO = "AW-18156586677/s-AcCKj23awcELWN3tFD";
-export const CALL_CONVERSION_SEND_TO: string = "";
+export const CALL_CONVERSION_SEND_TO = "AW-18156586677/SjdVCNqw4a0dELWN3tFD";
 
 type Gtag = (command: "event", action: string, params: Record<string, unknown>) => void;
 
