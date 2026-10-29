@@ -23,17 +23,6 @@ const schema = {
     addressCountry: "NZ",
   },
   areaServed: [...serviceAreas, "Hawke's Bay"].map((name) => ({ "@type": "Place", name })),
-  // [REPLACE] confirm real opening hours
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "07:00",
-      closes: "17:30",
-    },
-  ],
-  // [REPLACE] with the Google Business Profile URL and any social profiles
-  sameAs: ["https://g.page/REPLACE-WITH-GOOGLE-BUSINESS-PROFILE"],
 };
 
 export default function LocalBusinessSchema() {

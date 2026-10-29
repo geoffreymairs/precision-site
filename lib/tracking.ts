@@ -1,8 +1,8 @@
 // Google Ads conversion targets.
 // Form conversion is the existing live action that was already firing on /thank-you.
-// [REPLACE] AW-XXXXXXX/XXXXXXX with the "AW-ID/label" of a phone-call-click conversion from Google Ads > Goals > Conversions.
+// Call-click conversion stays disabled until a phone-call conversion "AW-ID/label" is created in Google Ads.
 export const FORM_CONVERSION_SEND_TO = "AW-18156586677/s-AcCKj23awcELWN3tFD";
-export const CALL_CONVERSION_SEND_TO = "AW-XXXXXXX/XXXXXXX";
+export const CALL_CONVERSION_SEND_TO: string = "";
 
 type Gtag = (command: "event", action: string, params: Record<string, unknown>) => void;
 

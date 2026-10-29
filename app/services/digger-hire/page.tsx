@@ -17,14 +17,6 @@ const related = [
   { label: "Stump Removal", href: "/services/stump-removal" },
 ];
 
-// [REPLACE] the bracketed values with real machine details and pricing
-const machineDetails = [
-  { label: "Machine", value: "[digger size/tonnage]" },
-  { label: "Attachments", value: "[attachments: buckets, auger, rippers etc]" },
-  { label: "Minimum hire", value: "[minimum hire]" },
-  { label: "Rate", value: '[hourly rate from $X +GST or "ask for a rate"]' },
-];
-
 const whyOperated = [
   {
     title: "No risk of damage",
@@ -37,10 +29,6 @@ const whyOperated = [
   {
     title: "Tidier",
     text: "Clean cuts, level finishes and a tidy site when we leave.",
-  },
-  {
-    title: "Insured operator",
-    text: "Billy is a fully insured [confirm] operator, so you're covered if anything goes wrong.",
   },
 ];
 
@@ -66,35 +54,16 @@ export default function DiggerHirePage() {
       ]}
       relatedServices={related}
     >
-      <section aria-labelledby="machine-heading" className="bg-stone-50 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div>
-            <p className="text-amber-600 text-sm font-semibold uppercase tracking-widest mb-2">
-              The machine
-            </p>
-            <h2 id="machine-heading" className="text-2xl sm:text-3xl font-extrabold text-stone-900 mb-6 text-balance">
-              Machine details and rates
-            </h2>
-            <dl className="bg-white rounded-2xl border border-stone-200 divide-y divide-stone-200">
-              {machineDetails.map((item) => (
-                <div key={item.label} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 px-5 py-4">
-                  <dt className="text-sm font-semibold uppercase tracking-wide text-stone-500 sm:w-36 flex-shrink-0">
-                    {item.label}
-                  </dt>
-                  <dd className="text-stone-900 font-medium">{item.value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-
+      <section aria-labelledby="why-operated-heading" className="bg-stone-50 py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
           <div>
             <p className="text-amber-600 text-sm font-semibold uppercase tracking-widest mb-2">
               Why operated hire
             </p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-stone-900 mb-6 text-balance">
+            <h2 id="why-operated-heading" className="text-2xl sm:text-3xl font-extrabold text-stone-900 mb-6 text-balance">
               Why operated hire beats dry hire
             </h2>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {whyOperated.map((item) => (
                 <li key={item.title} className="bg-white rounded-2xl border border-stone-200 p-5">
                   <div className="flex items-center gap-2 mb-2">

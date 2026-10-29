@@ -11,7 +11,6 @@ const serviceList = [
 ];
 
 const heroTrust = [
-  { label: "5.0 Google rating [REPLACE]", star: true },
   { label: "Same-day replies", star: false },
   { label: "Napier & Hastings based", star: false },
 ];
