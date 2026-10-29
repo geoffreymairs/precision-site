@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 };
 
 const related = [
-  { label: "Landscaping", href: "/services/landscaping" },
   { label: "Driveways", href: "/services/driveways" },
   { label: "Stump Removal", href: "/services/stump-removal" },
   { label: "Auger Work", href: "/services/auger-work" },

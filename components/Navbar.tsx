@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const serviceLinks = [
-  { label: "Landscaping", href: "/services/landscaping" },
   { label: "Service Trenching", href: "/services/trenching" },
   { label: "Driveways", href: "/services/driveways" },
   { label: "Foundations", href: "/services/foundations" },

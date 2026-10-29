@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-  { label: "Landscaping", href: "/services/landscaping" },
   { label: "Service Trenching", href: "/services/trenching" },
   { label: "Driveways", href: "/services/driveways" },
   { label: "Foundations", href: "/services/foundations" },
