@@ -5,6 +5,9 @@ import "./globals.css";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MobileActionBar from "@/components/MobileActionBar";
+import CallTracking from "@/components/CallTracking";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -12,9 +15,9 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Precision Digger Worx | Digger Services Napier, Hastings & Hawke's Bay",
+  title: "Operated Digger Hire & Earthmoving Hawke's Bay | Precision Digger Worx",
   description:
-    "Expert excavation, landscaping, trenching, and earthmoving services across Napier, Hastings and the Hawke's Bay region. Call Billy on 022 649 1618.",
+    "Operated digger hire, earthmoving, excavation, trenching and driveways across Napier, Hastings and Hawke's Bay. Free quotes, call Billy on 022 649 1618.",
 };
 
 export default function RootLayout({
@@ -56,10 +59,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        <LocalBusinessSchema />
         <TopBar />
         <Navbar />
         <main className="flex-1 flex flex-col">{children}</main>
         <Footer />
+        <MobileActionBar />
+        <CallTracking />
       </body>
     </html>
   );

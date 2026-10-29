@@ -25,7 +25,7 @@ export default function Contact() {
       const json = await res.json();
       console.log("[Contact Form] Web3Forms response:", json);
       if (json.success) {
-        console.log("[Contact Form] Submission successful — redirecting to /thank-you");
+        console.log("[Contact Form] Submission successful - redirecting to /thank-you");
         form.reset();
         router.push("/thank-you");
       } else {
@@ -42,7 +42,7 @@ export default function Contact() {
     <section id="contact" className="bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Left — details */}
+          {/* Left - details */}
           <div>
             <p className="text-amber-600 text-sm font-semibold uppercase tracking-widest mb-2">
               Get in Touch
@@ -102,7 +102,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — form */}
+          {/* Right - form */}
           <div className="bg-stone-50 border border-stone-100 rounded-2xl p-8">
             <h3 className="text-xl font-bold text-stone-900 mb-6">Send Us a Message</h3>
 
@@ -164,7 +164,7 @@ export default function Contact() {
                 </div>
 
                 {status === "error" && (
-                  <p className="text-red-600 text-sm text-center">Something went wrong — please try again or call us directly.</p>
+                  <p className="text-red-600 text-sm text-center">Something went wrong - please try again or call us directly.</p>
                 )}
 
                 <button

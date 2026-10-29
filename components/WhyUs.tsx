@@ -37,7 +37,7 @@ const reasons = [
     ),
     title: "Full Site Cleanup",
     description:
-      "We leave every site as clean as we found it — often better. No mess left behind, no loose ends.",
+      "We leave every site as clean as we found it - often better. No mess left behind, no loose ends.",
   },
   {
     icon: (

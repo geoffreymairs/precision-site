@@ -9,7 +9,7 @@ const excavationProject: FeaturedProjectData = {
   title: "Excavation & Siteworks",
   location: "Napier Hill, Hawke's Bay",
   description:
-    "Precision Digger Worx carried out large-scale excavation and siteworks for this Napier Hill villa. With the house supported on temporary timber piles, our team excavated the site, shaped the ground, set out footings and thickenings with string lines, and managed spoil removal — all while working carefully around the existing structure and neighbouring boundaries.",
+    "Precision Digger Worx carried out large-scale excavation and siteworks for this Napier Hill villa. With the house supported on temporary timber piles, our team excavated the site, shaped the ground, set out footings and thickenings with string lines, and managed spoil removal - all while working carefully around the existing structure and neighbouring boundaries.",
   tags: ["Excavation", "Siteworks", "Demolition", "Footings", "Residential"],
   beforeImages: [],
   afterImages: [

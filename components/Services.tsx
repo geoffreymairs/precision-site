@@ -3,6 +3,14 @@ import Link from "next/link";
 
 const services = [
   {
+    title: "Operated Digger Hire",
+    description:
+      "Hire the digger with Billy on the controls. No licence or experience needed, just tell us what you want done and we'll get it sorted.",
+    image: "/images/IMG20250401090054-scaled.jpg",
+    alt: "Operator view from the digger cab during an earthworks job",
+    href: "/services/digger-hire",
+  },
+  {
     title: "Landscaping",
     description:
       "From garden terracing to full outdoor transformations. We understand local soil, flora, and conditions across the Hawke's Bay region.",
@@ -29,7 +37,7 @@ const services = [
   {
     title: "Driveways",
     description:
-      "Gravel, chip seal, or prepared surfaces — we assess your property and deliver a durable, great-looking driveway.",
+      "Gravel, chip seal, or prepared surfaces - we assess your property and deliver a durable, great-looking driveway.",
     image: "/images/422f472a-27f3-40bb-9eb6-d2e7f8d7778a.jpg",
     alt: "Finished gravel driveway with roller compactor at residential property",
     href: "/services/driveways",
@@ -69,15 +77,15 @@ const services = [
   {
     title: "Residential Backyard Work",
     description:
-      "Full backyard transformations — excavation, grading, steps, paths, and retaining. Tailored to your space and lifestyle.",
+      "Full backyard transformations - excavation, grading, steps, paths, and retaining. Tailored to your space and lifestyle.",
     image: "/images/1000009720.jpg",
     alt: "CAT excavator working on residential backyard steps and gravel path",
     href: "/services/backyard-work",
   },
   {
-    title: "General Excavations",
+    title: "Earthmoving & Excavation",
     description:
-      "Large or small, residential or commercial — we have the machinery and expertise to handle any excavation requirement.",
+      "Earthworks large or small, residential or commercial. We have the machine and the experience to handle any excavation job.",
     image: "/images/IMG20240924151517-scaled.jpg",
     alt: "CAT excavator on large earthworks site with Hawke's Bay hills in background",
     href: "/services/excavation",
@@ -105,9 +113,9 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-stone-500 max-w-2xl mx-auto text-lg">
-            Complete excavation, landscaping, and earthmoving across Napier,
-            Hastings, and the Hawke's Bay region. Whatever the job, we have the
-            machinery and experience to solve it.
+            Operated digger hire, earthmoving and excavation across Napier,
+            Hastings and the Hawke&apos;s Bay region. Whatever the job, we have the
+            machine and the experience to get it done.
           </p>
         </div>
 
