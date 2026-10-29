@@ -10,8 +10,8 @@ export const faqs = [
     a: "We're based in Puketapu and cover all of Hawke's Bay, including Napier, Hastings, Taradale, Havelock North, Clive, Bay View and the surrounding rural areas. If you're a bit further out, give us a call and we'll see what we can do.",
   },
   {
-    q: "How much does digger hire cost?",
-    a: "Operated digger hire is charged by the hour, from [$X per hour +GST]. The total depends on the size of the job, access and any spoil or green waste removal. Every quote is free, so get in touch and we'll give you a clear price up front.",
+    q: "How much does a job cost?",
+    a: "Work is charged by the hour, with Billy and the machine on site. The total depends on the size of the job, access and any spoil or green waste removal. Every quote is free and up front, so get in touch and we'll give you a clear price before any work starts.",
   },
   {
     q: "How quickly can you start?",
@@ -19,15 +19,23 @@ export const faqs = [
   },
   {
     q: "Do you take away spoil and green waste?",
-    a: "Yes. We can cart away spoil, rubble, stumps and green waste, or spread and level it on site if you'd like to keep it. Just let us know when you ask for a quote and we'll include it.",
+    a: "Yes. We can cart away spoil, rubble, concrete and green waste, or spread and level it on site if you'd like to keep it. Just let us know when you ask for a quote and we'll include it.",
   },
 ];
 
-export default function FAQ({ heading = "Frequently asked questions" }: { heading?: string }) {
+export type FAQItem = { q: string; a: string };
+
+export default function FAQ({
+  heading = "Frequently asked questions",
+  items = faqs,
+}: {
+  heading?: string;
+  items?: FAQItem[];
+}) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
+    mainEntity: items.map((f) => ({
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -48,7 +56,7 @@ export default function FAQ({ heading = "Frequently asked questions" }: { headin
           {heading}
         </h2>
         <div className="divide-y divide-stone-200 border-y border-stone-200">
-          {faqs.map((f) => (
+          {items.map((f) => (
             <details key={f.q} className="group">
               <summary className="flex items-center justify-between gap-4 py-5 cursor-pointer list-none font-semibold text-stone-900 hover:text-amber-600 transition-colors [&::-webkit-details-marker]:hidden">
                 {f.q}

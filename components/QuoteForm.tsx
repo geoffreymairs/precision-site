@@ -87,7 +87,10 @@ export default function QuoteForm({
               Job type
             </label>
             <select id={`${idPrefix}-job`} name="job_type" defaultValue={defaultJobType} className={fieldClass}>
-              {jobTypes.map((type) => (
+              {((jobTypes as readonly JobType[]).includes(defaultJobType)
+                ? jobTypes
+                : [defaultJobType, ...jobTypes]
+              ).map((type) => (
                 <option key={type} value={type}>
                   {type}
                 </option>

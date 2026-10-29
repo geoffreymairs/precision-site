@@ -1,39 +1,41 @@
 import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+import { relatedServices } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Trenching Services | Precision Digger Worx - Hawke's Bay",
+  title: "Trenching & Drainage Napier & Hastings | Precision Digger Worx",
   description:
-    "Expert service trenching for water, gas, electricity and stormwater across Napier, Hastings and Hawke's Bay.",
+    "Trenching and drainage across Hawke's Bay. Water, power and cable trenches, stormwater, soak holes and french drains. Free quotes, call 022 649 1618.",
+  alternates: { canonical: "/services/trenching" },
 };
-
-const related = [
-  { label: "Foundations", href: "/services/foundations" },
-  { label: "Concrete Preparation", href: "/services/concrete-prep" },
-  { label: "Earthmoving & Excavation", href: "/services/excavation" },
-  { label: "Driveways", href: "/services/driveways" },
-];
 
 export default function TrenchingPage() {
   return (
     <ServicePage
-      jobType="Service trenching"
-      title="Service Trenching"
-      subtitle="Precision trenching for utilities and drainage across Napier, Hastings, and the Hawke's Bay region - completed safely, on time, and with minimal disruption."
+      jobType="Trenching & drainage"
+      title="Trenching & Drainage"
+      heading="Trenching & Drainage Napier & Hastings"
+      subtitle="Service trenching and drainage solutions across Napier, Hastings and Hawke's Bay, completed safely, on time and with minimal disruption."
       image="/images/1-pdw.jpeg"
-      imageAlt="Long service trench dug along driveway with excavator bucket visible"
-      description="Precision Digger Worx specialises in service trenching for residential, rural, and light commercial projects throughout Hawke's Bay. Whether you need a trench for water, gas, electricity, telecommunications, or stormwater, we dig clean, accurate trenches to the required depth and profile. We work carefully around existing services and structures, and restore the surface on completion. Safety is non-negotiable - we follow all relevant standards and mark or locate services before we dig."
+      imageAlt="Long service trench dug along a driveway with excavator bucket visible"
+      description="Precision Digger Worx digs clean, accurate trenches for water, power, telecommunications and data cables, to the required depth and profile. We also sort out drainage problems, from stormwater drainage and soak holes to subsoil and french drains that move water away from your house, driveway or section. We work carefully around existing services and structures, locate services before we dig, and restore the surface on completion."
       bullets={[
-        "Water, gas, and electricity service trenching",
+        "Water and power service trenching",
         "Telecommunications and data cable trenching",
-        "Stormwater and drainage trenching",
-        "General purpose agricultural trenching",
-        "Accurate depth and width control",
-        "Safe working around existing services",
-        "Clean spoil management and removal",
-        "Surface restoration on completion",
+        "Stormwater drainage",
+        "Soak holes",
+        "Subsoil drains",
+        "French drains",
+        "Accurate depth, width and fall control",
+        "Clean spoil management and surface restoration",
       ]}
-      relatedServices={related}
+      relatedServices={relatedServices(
+        "/services/excavation",
+        "/services/foundations",
+        "/services/driveways",
+        "/services/land-section-prep",
+        "/services/digger-hire",
+      )}
     />
   );
 }

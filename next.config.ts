@@ -10,6 +10,20 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/services/stump-removal",
+        destination: "/services/land-section-prep",
+        permanent: true,
+      },
+      {
+        source: "/services/backyard-work",
+        destination: "/services/excavation",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

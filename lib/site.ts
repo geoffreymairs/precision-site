@@ -7,33 +7,40 @@ export const SITE_URL = "https://www.precisiondiggerworx.com";
 export const GOOGLE_REVIEWS_URL = "https://www.google.com/maps/search/?api=1&query=Precision+Digger+Worx";
 
 export const navServices = [
-  { label: "Operated Digger Hire", href: "/services/digger-hire" },
-  { label: "Service Trenching", href: "/services/trenching" },
-  { label: "Driveways", href: "/services/driveways" },
+  { label: "Driveway Prep", href: "/services/driveways" },
+  { label: "Residential Excavation", href: "/services/excavation" },
+  { label: "Land & Section Prep", href: "/services/land-section-prep" },
+  { label: "Pool Digouts", href: "/services/pool-digouts" },
+  { label: "Demolition & Removal", href: "/services/demolition" },
+  { label: "Trenching & Drainage", href: "/services/trenching" },
   { label: "Foundations", href: "/services/foundations" },
   { label: "Concrete Preparation", href: "/services/concrete-prep" },
   { label: "Auger Work", href: "/services/auger-work" },
-  { label: "Stump Removal", href: "/services/stump-removal" },
-  { label: "Backyard Work", href: "/services/backyard-work" },
-  { label: "Earthmoving & Excavation", href: "/services/excavation" },
 ];
 
+export function relatedServices(...hrefs: string[]) {
+  return hrefs
+    .map((href) => navServices.find((s) => s.href === href))
+    .filter((s): s is (typeof navServices)[number] => Boolean(s));
+}
+
 export const jobTypes = [
-  "Operated digger hire",
-  "Earthmoving & excavation",
-  "Service trenching",
-  "Driveways",
+  "Driveway prep",
+  "Residential excavation",
+  "Land & section prep",
+  "Pool digouts",
+  "Demolition & removal",
+  "Trenching & drainage",
   "Foundations",
   "Concrete preparation",
-  "Auger / post hole drilling",
-  "Stump & green waste removal",
-  "Backyard work",
-  "Landscaping",
-  "Topsoil",
+  "Auger work",
   "Not sure / something else",
 ] as const;
 
-export type JobType = (typeof jobTypes)[number];
+// Unlisted job types are only offered on their own page (e.g. /services/digger-hire, which is kept out of navigation).
+export const unlistedJobTypes = ["Operated digger hire"] as const;
+
+export type JobType = (typeof jobTypes)[number] | (typeof unlistedJobTypes)[number];
 
 export const serviceAreas = [
   "Napier",

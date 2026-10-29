@@ -3,52 +3,52 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Operated Digger Hire",
+    title: "Driveway Prep",
     description:
-      "Hire the digger with Billy on the controls. No licence or experience needed, just tell us what you want done and we'll get it sorted.",
-    image: "/images/IMG20250401090054-scaled.jpg",
-    alt: "Operator view from the digger cab during an earthworks job",
-    href: "/services/digger-hire",
-  },
-  {
-    title: "Landscaping",
-    description:
-      "From garden terracing to full outdoor transformations. We understand local soil, flora, and conditions across the Hawke's Bay region.",
-    image: "/images/136765321_257505979131328_8465862777364736343_n.jpg",
-    alt: "Landscaped terraced garden steps with agapanthus in Hawke's Bay",
-    href: "/services/landscaping",
-  },
-  {
-    title: "Service Trenching",
-    description:
-      "Precision trenching for water, gas, and electrical utilities. Minimal disruption, maximum care, and full adherence to safety standards.",
-    image: "/images/trenching_4.png",
-    alt: "Service trench dug along a rural property",
-    href: "/services/trenching",
-  },
-  {
-    title: "New Lawns & Reseeding",
-    description:
-      "New lawn installations and reseeding using premium turf and topsoil. We prepare the ground and set your lawn up to thrive.",
-    image: "/images/lawns.png",
-    alt: "Lush green lawn with curved garden edging",
-    href: "/contact",
-  },
-  {
-    title: "Driveways",
-    description:
-      "Gravel, chip seal, or prepared surfaces - we assess your property and deliver a durable, great-looking driveway.",
+      "Driveway excavation, base preparation and compaction for concrete, gravel and chip seal driveways. A solid base that lasts.",
     image: "/images/422f472a-27f3-40bb-9eb6-d2e7f8d7778a.jpg",
     alt: "Finished gravel driveway with roller compactor at residential property",
     href: "/services/driveways",
   },
   {
-    title: "Concrete Preparation",
+    title: "Residential Excavation",
     description:
-      "Precision site preparation for concrete pours. Laser-level accuracy, correct base compaction, and full site cleanup.",
-    image: "/images/1CE0716F_IMG_5195-copy-scaled.webp",
-    alt: "Laser level survey equipment for concrete slab preparation",
-    href: "/services/concrete-prep",
+      "House sites, foundations, retaining wall digs and residential earthworks, dug accurately to plan and left tidy.",
+    image: "/images/excavation1.jpeg",
+    alt: "Excavator digging a residential house site",
+    href: "/services/excavation",
+  },
+  {
+    title: "Land & Section Prep",
+    description:
+      "Section clearing, site levelling and building platforms for new builds and lifestyle blocks, including vegetation and spoil removal.",
+    image: "/images/IMG20240924151517-scaled.jpg",
+    alt: "CAT mini excavator levelling a rural section with Hawke's Bay hills in the background",
+    href: "/services/land-section-prep",
+  },
+  {
+    title: "Pool Digouts",
+    description:
+      "In-ground and plunge pool excavation for homeowners and pool builders. Accurate digs to plan, spoil removed or spread on site.",
+    image: "/images/excavation7.jpeg",
+    alt: "Excavated pit with a Yanmar excavator working below and a CAT excavator above",
+    href: "/services/pool-digouts",
+  },
+  {
+    title: "Demolition & Removal",
+    description:
+      "Sheds, garages, old driveways, paths and slabs broken out and carted away, with the site left clean for the next stage.",
+    image: "/images/excavation2.jpeg",
+    alt: "CAT excavator carrying out demolition and loading debris into a tip truck beside a house",
+    href: "/services/demolition",
+  },
+  {
+    title: "Trenching & Drainage",
+    description:
+      "Trenching for water, power and cable, plus stormwater drainage, soak holes, subsoil and french drains.",
+    image: "/images/1-pdw.jpeg",
+    alt: "Service trench dug along a property",
+    href: "/services/trenching",
   },
   {
     title: "Foundations",
@@ -59,44 +59,20 @@ const services = [
     href: "/services/foundations",
   },
   {
+    title: "Concrete Preparation",
+    description:
+      "Precision site preparation for concrete pours. Laser-level accuracy, correct base compaction, and full site cleanup.",
+    image: "/images/1CE0716F_IMG_5195-copy-scaled.webp",
+    alt: "Laser level survey equipment for concrete slab preparation",
+    href: "/services/concrete-prep",
+  },
+  {
     title: "Auger Work",
     description:
       "Efficient hole drilling for fence posts, piles, and structures. The right attachment, used precisely where you need it.",
     image: "/images/IMG20250304100030-scaled.jpg",
     alt: "CAT mini excavator with auger attachment drilling fence post holes",
     href: "/services/auger-work",
-  },
-  {
-    title: "Greenwaste & Stump Removal",
-    description:
-      "Clear stumps and green waste safely and efficiently. Eco-friendly disposal keeping your property clean and hazard-free.",
-    image: "/images/stump-removal.png",
-    alt: "Yellow machinery grinding a tree stump",
-    href: "/services/stump-removal",
-  },
-  {
-    title: "Residential Backyard Work",
-    description:
-      "Full backyard transformations - excavation, grading, steps, paths, and retaining. Tailored to your space and lifestyle.",
-    image: "/images/1000009720.jpg",
-    alt: "CAT excavator working on residential backyard steps and gravel path",
-    href: "/services/backyard-work",
-  },
-  {
-    title: "Earthmoving & Excavation",
-    description:
-      "Earthworks large or small, residential or commercial. We have the machine and the experience to handle any excavation job.",
-    image: "/images/IMG20240924151517-scaled.jpg",
-    alt: "CAT excavator on large earthworks site with Hawke's Bay hills in background",
-    href: "/services/excavation",
-  },
-  {
-    title: "Top Soil Delivery",
-    description:
-      "Quality topsoil delivered and spread. Rich, nutrient-dense soil to give your lawn or garden the best possible start.",
-    image: "/images/IMG20250401090054-scaled.jpg",
-    alt: "Operator view from digger cabin during bulk earthworks and topsoil work",
-    href: "/contact",
   },
 ];
 
@@ -113,8 +89,8 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-stone-500 max-w-2xl mx-auto text-lg">
-            Operated digger hire, earthmoving and excavation across Napier,
-            Hastings and the Hawke&apos;s Bay region. Whatever the job, we have the
+            Excavation and earthworks across Napier, Hastings and the
+            Hawke&apos;s Bay region. Whatever the job, we have the
             machine and the experience to get it done.
           </p>
         </div>

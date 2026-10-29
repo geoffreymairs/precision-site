@@ -17,7 +17,7 @@ const related = [
 export default function LandscapingPage() {
   return (
     <ServicePage
-      jobType="Landscaping"
+      jobType="Not sure / something else"
       title="Landscaping"
       subtitle="Full outdoor transformations across Napier, Hastings, and the Hawke's Bay region - from garden reshaping to terracing and retaining."
       image="/images/136765321_257505979131328_8465862777364736343_n.jpg"
