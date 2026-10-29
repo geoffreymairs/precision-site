@@ -77,10 +77,10 @@ export default function QuoteForm({
         </div>
         <div className="grid grid-cols-2 gap-3">
           <div>
-            <label htmlFor={`${idPrefix}-suburb`} className="block text-xs font-semibold text-stone-700 mb-1">
-              Suburb
+            <label htmlFor={`${idPrefix}-address`} className="block text-xs font-semibold text-stone-700 mb-1">
+              Address
             </label>
-            <input id={`${idPrefix}-suburb`} name="suburb" type="text" autoComplete="address-level2" placeholder="e.g. Taradale" className={fieldClass} />
+            <input id={`${idPrefix}-address`} name="address" type="text" autoComplete="street-address" placeholder="e.g. 12 Gloucester St, Taradale" className={fieldClass} />
           </div>
           <div>
             <label htmlFor={`${idPrefix}-job`} className="block text-xs font-semibold text-stone-700 mb-1">
