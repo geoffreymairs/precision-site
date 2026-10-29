@@ -16,7 +16,7 @@ export type FeaturedProjectData = {
   afterImages: GalleryImage[];
 };
 
-// Default project — Concrete Driveway installation.
+// Default project - Concrete Driveway installation.
 const drivewayProject: FeaturedProjectData = {
   eyebrow: "Featured Project",
   title: "New Driveway Installation",
@@ -88,7 +88,7 @@ export default function FeaturedProject({
       <div className="w-full max-w-5xl mx-auto">
         <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[1.25fr_0.9fr] gap-7 lg:gap-10 items-start">
 
-          {/* Gallery — 60% on desktop */}
+          {/* Gallery - 60% on desktop */}
           <div className="min-w-0">
             {/* Before / After toggle */}
             {hasBefore && (
@@ -181,7 +181,7 @@ export default function FeaturedProject({
             </div>
           </div>
 
-          {/* Details — 40% on desktop */}
+          {/* Details - 40% on desktop */}
           <div className="min-w-0 lg:pt-2">
             <p className="text-amber-400 text-sm font-semibold uppercase tracking-widest mb-3">
               {eyebrow}

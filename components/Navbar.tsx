@@ -4,17 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const serviceLinks = [
-  { label: "Service Trenching", href: "/services/trenching" },
-  { label: "Driveways", href: "/services/driveways" },
-  { label: "Foundations", href: "/services/foundations" },
-  { label: "Concrete Preparation", href: "/services/concrete-prep" },
-  { label: "Auger Work", href: "/services/auger-work" },
-  { label: "Stump Removal", href: "/services/stump-removal" },
-  { label: "Backyard Work", href: "/services/backyard-work" },
-  { label: "General Excavations", href: "/services/excavation" },
-];
+import { navServices as serviceLinks } from "@/lib/site";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);

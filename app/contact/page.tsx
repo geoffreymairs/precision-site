@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Precision Digger Worx — Hawke's Bay",
+  title: "Contact Us | Precision Digger Worx - Hawke's Bay",
   description:
     "Get in touch with Precision Digger Worx for a free quote. Call Billy on 022 649 1618 or send a message. Serving Napier, Hastings and Hawke's Bay.",
 };

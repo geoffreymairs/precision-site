@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <div className="flex-1 flex items-center justify-center bg-stone-50 py-24 px-4 sm:px-6 lg:px-8">
-      {/* Google Ads conversion — fires only on /thank-you */}
+      {/* Google Ads conversion - fires only on /thank-you */}
       <GoogleAdsConversion />
       <div className="max-w-lg w-full text-center">
 

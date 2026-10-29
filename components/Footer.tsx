@@ -1,16 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const services = [
-  { label: "Service Trenching", href: "/services/trenching" },
-  { label: "Driveways", href: "/services/driveways" },
-  { label: "Foundations", href: "/services/foundations" },
-  { label: "Concrete Preparation", href: "/services/concrete-prep" },
-  { label: "Auger Work", href: "/services/auger-work" },
-  { label: "Stump Removal", href: "/services/stump-removal" },
-  { label: "Backyard Work", href: "/services/backyard-work" },
-  { label: "General Excavations", href: "/services/excavation" },
-];
+import { navServices as services } from "@/lib/site";
 
 export default function Footer() {
   return (
@@ -33,8 +23,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-6">
-              Expert excavation, landscaping, and earthmoving services across
-              Napier, Hastings, and the Hawke's Bay region.
+              Operated digger hire, earthmoving and excavation across Napier,
+              Hastings and the Hawke&apos;s Bay region.
             </p>
             <a
               href="tel:0226491618"
