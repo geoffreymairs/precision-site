@@ -7,6 +7,21 @@ const badges = [
   "Tidy cleanup guaranteed",
 ];
 
+const reviews = [
+  {
+    author: "Jeremy Yates",
+    text: "I can highly recommend Billy, top bloke that does a great job. He has delivered an excellent service on our developments over the last 5yrs. Great communication and takes pride in his work. Will definitely be using him again on our next project.",
+  },
+  {
+    author: "Athir Matti",
+    text: "I have known Billy for well over 5 years now and he has done over 5 different jobs for me in different locations. So I can say with full confidence, he is one local legend.",
+  },
+  {
+    author: "Barking Mad Landscapes",
+    text: "Great service.",
+  },
+];
+
 export default function TrustSection() {
   return (
     <section aria-labelledby="trust-heading" className="bg-stone-900 py-16 px-4 sm:px-6 lg:px-8">
@@ -32,6 +47,25 @@ export default function TrustSection() {
             </svg>
           </a>
         </div>
+
+        <ul className="grid gap-4 md:grid-cols-3 mb-8" aria-label="Google reviews">
+          {reviews.map((review) => (
+            <li key={review.author} className="flex flex-col bg-stone-800 border border-stone-700 rounded-xl p-6">
+              <div className="flex gap-0.5 mb-3" role="img" aria-label="5 out of 5 stars">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <blockquote className="flex-1 text-stone-200 text-sm leading-relaxed">
+                <p>&ldquo;{review.text}&rdquo;</p>
+              </blockquote>
+              <p className="mt-4 text-white font-semibold text-sm">{review.author}</p>
+              <p className="text-stone-400 text-xs">Google review</p>
+            </li>
+          ))}
+        </ul>
 
         <ul className="flex flex-wrap gap-2.5" aria-label="Why choose us">
           {badges.map((badge) => (
