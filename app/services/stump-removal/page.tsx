@@ -16,7 +16,7 @@ const related = [
 export default function StumpRemovalPage() {
   return (
     <ServicePage
-      jobType="Stump     <ServicePage green waste removal"
+      jobType="Stump & green waste removal"
       title="Greenwaste & Stump Removal"
       subtitle="Safe, efficient removal of tree stumps and green waste across Hawke's Bay - leaving your property clean, hazard-free, and ready to use."
       image="/images/stump-removal.png"
