@@ -77,6 +77,9 @@ const newLawnProject: FeaturedProjectData = {
 };
 
 const images = [
+  { src: "/images/driveway-prep2.jpeg", alt: "Compacted basecourse driveway in front of a modern home with a JCB roller by the garage" },
+  { src: "/images/driveway-prep3.jpeg", alt: "Yanmar mini excavator beside a new timber-edged garden and freshly compacted driveway base" },
+  { src: "/images/driveway-prep1.jpeg", alt: "Long narrow driveway finished in grey chip between two fences with a digger at the far end" },
   { src: "/images/excavation1.jpeg", alt: "CAT and Yanmar excavators carrying out large-scale excavation in front of a white villa on Napier Hill" },
   { src: "/images/excavation3.jpeg", alt: "Wide view of the villa on temporary timber piles beside a deep excavated site with survey equipment" },
   { src: "/images/excavation7.jpeg", alt: "Excavated swimming pool pit with a Yanmar excavator working below and a CAT excavator above" },
@@ -98,9 +101,6 @@ const images = [
   { src: "/images/lawn-before1.jpeg", alt: "Excavator clearing the old garden with bare soil beds around brick paver paths before turf was laid" },
   { src: "/images/lawn-before2.jpeg", alt: "Prepared and levelled ground with the first rolls of ready lawn being laid beside the paver path" },
   { src: "/images/lawn-before3.jpeg", alt: "Front garden mid-installation with turf partially laid and watering in progress" },
-  { src: "/images/driveway-prep2.jpeg", alt: "Compacted basecourse driveway in front of a modern home with a JCB roller by the garage" },
-  { src: "/images/driveway-prep3.jpeg", alt: "Yanmar mini excavator beside a new timber-edged garden and freshly compacted driveway base" },
-  { src: "/images/driveway-prep1.jpeg", alt: "Long narrow driveway finished in grey chip between two fences with a digger at the far end" },
   { src: "/images/driveway1.jpeg", alt: "Freshly graded curving gravel driveway through tilled earth with rolling green hills behind" },
   { src: "/images/driveway8.jpeg", alt: "Wide curving gravel driveway leading toward farm buildings with excavator and truck" },
   { src: "/images/driveway4.jpeg", alt: "Concrete pad meeting a graded gravel driveway curving through a green farm paddock" },
