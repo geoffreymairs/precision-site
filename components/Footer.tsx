@@ -83,7 +83,13 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-stone-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-stone-600">
-          <p>© {new Date().getFullYear()} Precision Digger Worx Ltd. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Precision Digger Worx Ltd. All rights reserved.{" "}
+            <span aria-hidden="true">·</span>{" "}
+            <Link href="/privacy" className="hover:text-amber-400 transition-colors">
+              Privacy Policy
+            </Link>
+          </p>
           <p>Napier · Hastings · Hawke's Bay</p>
           <p>Website managed by <a href="https://www.catchie.nz/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">Catchie</a></p>
         </div>
