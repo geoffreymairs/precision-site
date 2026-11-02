@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+import MiniGallery from "@/components/MiniGallery";
 import { relatedServices } from "@/lib/site";
+
+const drivewayImages = [
+  { src: "/images/driveway-prep2.jpeg", alt: "Compacted basecourse driveway in front of a modern home with a JCB roller by the garage" },
+  { src: "/images/driveway-prep3.jpeg", alt: "Yanmar mini excavator beside a new timber-edged garden and freshly compacted driveway base" },
+  { src: "/images/driveway-prep1.jpeg", alt: "Long narrow driveway finished in grey chip between two fences with a digger at the far end" },
+];
 
 export const metadata: Metadata = {
   title: "Driveway Prep Napier & Hastings | Precision Digger Worx",
@@ -36,6 +43,8 @@ export default function DrivewaysPage() {
         "/services/trenching",
         "/services/digger-hire",
       )}
-    />
+    >
+      <MiniGallery heading="Driveway Prep Projects" images={drivewayImages} />
+    </ServicePage>
   );
 }
